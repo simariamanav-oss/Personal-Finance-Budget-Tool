@@ -1,7 +1,7 @@
 # FinHelp- An AI Financial Assistant for Students
 
 ## What is this?
-FinHelp is a web app I built that uses AI to help students with their finances. You can ask it anything money-related — like how to budget, how student loans work, or how to save money — and it gives you a real, helpful answer instantly. Think of it like having a financial advisor in your pocket, except it's free and doesn't judge you for spending $8 on a coffee or spending over $100 at bar one night :)
+FinHelp is a web app I built that uses AI to help students with their finances. You can ask it anything money-related like how to budget, how student loans work, or how to save money and it gives you a real, helpful answer instantly. Think of it like having a financial advisor in your pocket, except it's free and doesn't judge you for spending $8 on a coffee or spending over $100 at a bar one night :)
 
 ## Why I built this
 One big thing. RELATABILITY. Honestly, managing money as a student is hard. That too an international student. Nobody really teaches you how to budget, what to do with your student loans, or how credit cards work. I wanted to build something that actually helps students figure this stuff out without having to sit through a boring finance lecture or pay for a consultation, even if this is generic.
@@ -16,7 +16,7 @@ It's pretty simple. You type a question into the chat box, hit send, and the AI 
 - HTML/CSS/JS- makes everything look nice in the browser
 
  ## Data Model
-The application stores one main type of information — chat records:
+The application stores one main type of information, chat records:
 - Student question
 - AI-generated answer
 - Timestamp of the conversation
@@ -55,10 +55,10 @@ index.html  # the actual webpage
 
 ## Limitations and Future Work:
 - This prototype doesn't include user login, spending tracking, or integration with real banking data. 
-- The AI responses are also only as good as the question asked — it works best with specific questions rather than vague ones.
+- The AI responses are also only as good as the question asked, it works best with specific questions rather than vague ones.
 
 ## Future improvements could include:
 - A budget tracker where students log actual expenses.
 - Personalized financial plans based on income and spending.
 - Multilingual support for international students.
-- Integration with Canadian student loan portals or any atoher country if it goes golbal.
+- Integration with Canadian student loan portals or any atoher country if it goes global.
