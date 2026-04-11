@@ -9,6 +9,15 @@ One big thing. RELATABILITY. Honestly, managing money as a student is hard. That
 ## How it works
 It's pretty simple. You type a question into the chat box, hit send, and the AI (Anthropic's Claude) gives you a response. Your questions and answers get saved to a database (Recent Questions) so you can scroll back and see what you asked before.
 
+The backend then:
+- Receives the student's question from the browser.
+- Sends it to Anthropic's Claude API with a financial assistant prompt.
+- Returns the AI-generated response to the frontend.
+- Saves both the question and answer to a persistent SQLite database.
+- Displays the conversation history below the chat on every page load.
+
+This means FinHelp isn't just a search bar. It's a decision support tool that gives students personalized financial guidance and keeps a record of it.
+
 ## Tools used:
 - Flask- runs the backend and handles requests
 - Claude AI- reads your question and generates a response
@@ -36,7 +45,7 @@ client = anthropic.Anthropic(api_key="api key here")
 4. Run it:
 python app.py
 
-5. Go to `http://127.0.0.1:5000` in your browser and start asking questions!
+5. Go to `http://127.0.0.1:5000` in your browser 
 
 ## What you can ask it (for e.g.)
 - How do I make a budget as a student?
@@ -53,7 +62,7 @@ requirements.txt  #dependencies
 templates:
 index.html  # the actual webpage
 
-## Limitations and Future Work:
+## Limitations:
 - This prototype doesn't include user login, spending tracking, or integration with real banking data. 
 - The AI responses are also only as good as the question asked, it works best with specific questions rather than vague ones.
 
