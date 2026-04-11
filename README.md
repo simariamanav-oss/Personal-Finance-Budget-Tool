@@ -9,11 +9,19 @@ One big thing. RELATABILITY. Honestly, managing money as a student is hard. That
 ## How it works
 It's pretty simple. You type a question into the chat box, hit send, and the AI (Anthropic's Claude) gives you a response. Your questions and answers get saved to a database (Recent Questions) so you can scroll back and see what you asked before.
 
-Tools used:
+## Tools used:
 - Flask- runs the backend and handles requests
 - Claude AI- reads your question and generates a response
 - SQLite- saves your chat history to a database
 - HTML/CSS/JS- makes everything look nice in the browser
+
+ ## Data Model
+The application stores one main type of information — chat records:
+- Student question
+- AI-generated answer
+- Timestamp of the conversation
+
+This allows the app to behave like a small personal finance log that doesnt forget everything when you close it.
 
 ## How to run it yourself
 1. Clone this repo:
@@ -44,3 +52,13 @@ requirements.txt  #dependencies
  
 templates:
 index.html  # the actual webpage
+
+## Limitations and Future Work
+- This prototype doesn't include user login, spending tracking, or integration with real banking data. 
+- The AI responses are also only as good as the question asked — it works best with specific questions rather than vague ones.
+
+## Future improvements could include:
+- A budget tracker where students log actual expenses.
+- Personalized financial plans based on income and spending.
+- Multilingual support for international students.
+- Integration with Canadian student loan portals or any atoher country if it goes golbal.
