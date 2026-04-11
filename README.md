@@ -53,7 +53,7 @@ requirements.txt  #dependencies
 templates:
 index.html  # the actual webpage
 
-## Limitations and Future Work
+## Limitations and Future Work:
 - This prototype doesn't include user login, spending tracking, or integration with real banking data. 
 - The AI responses are also only as good as the question asked — it works best with specific questions rather than vague ones.
 
