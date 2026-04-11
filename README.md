@@ -24,7 +24,7 @@ This means FinHelp isn't just a search bar. It's a decision support tool that gi
 - SQLite- saves your chat history to a database
 - HTML/CSS/JS- makes everything look nice in the browser
 
- ## Data Model
+## Data Model
 The application stores one main type of information, chat records:
 - Student question
 - AI-generated answer
@@ -70,4 +70,4 @@ index.html  # the actual webpage
 - A budget tracker where students log actual expenses.
 - Personalized financial plans based on income and spending.
 - Multilingual support for international students.
-- Integration with Canadian student loan portals or any atoher country if it goes global.
+- Integration with Canadian student loan portals or any other country if it goes global.
