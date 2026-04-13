@@ -18,6 +18,12 @@ The backend then:
 
 This means FinHelp isn't just a search bar. It's a decision support tool that gives students personalized financial guidance and keeps a record of it.
 
+## Key Features
+
+-AI featured Q&A styled Web App— Ask any finance question and get a real, personalized response instantly powered by Anthropic's Claude.
+-Conversation History — Every question and answer gets saved to a database so you can scroll back and revisit previous advice.
+-Simple Chat Interface — Clean and easy to use, no complicated menus or sign-ups required.
+
 ## Tools used:
 - Flask- runs the backend and handles requests
 - Claude AI- reads your question and generates a response
@@ -40,7 +46,7 @@ git clone https://github.com/simariamanav-oss/Personal-Finance-Budget-Tool.git
 pip install flask anthropic
 
 3. Open `app.py` and swap in your own Anthropic API key:
-client = anthropic.Anthropic(api_key="api key here")
+client = anthropic.Anthropic(api_key="api key here")     #given in the readme file
 
 4. Run it:
 python app.py
